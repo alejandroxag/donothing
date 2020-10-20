@@ -10,7 +10,7 @@ MIT](https://img.shields.io/badge/license-MIT-green.svg)
 ![](https://img.shields.io/badge/last%20change-October%2020,%202020-yellowgreen.svg)
 <!-- badges: end -->
 
-The aim of this is to saving the annoyance of commenting a pipe `%>%`.
+The aim of this is saving the annoyance of commenting a pipe `%>%`.
 
 ## Installation
 
@@ -20,6 +20,15 @@ You can install the development version from
 ``` r
 # install.packages("devtools")
 devtools::install_github("alejandroxag/donothing")
+#> 
+#>          checking for file 'C:\Users\aleja\AppData\Local\Temp\RtmpEpvpiN\remotes533c31514d60\alejandroxag-donothing-804fbc1/DESCRIPTION' ...  v  checking for file 'C:\Users\aleja\AppData\Local\Temp\RtmpEpvpiN\remotes533c31514d60\alejandroxag-donothing-804fbc1/DESCRIPTION'
+#>       -  preparing 'donothing':
+#>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   v  checking DESCRIPTION meta-information
+#>       -  checking for LF line-endings in source and make files and shell scripts
+#>   -  checking for empty or unneeded directories
+#>       -  building 'donothing_0.0.0.9000.tar.gz'
+#>      
+#> 
 library(donothing)
 ```
 

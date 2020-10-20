@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 ![](https://img.shields.io/badge/last change-`r Sys.setlocale('LC_TIME','English'); format(Sys.time(), '%B %d, %Y')`-yellowgreen.svg)
 <!-- badges: end -->
 
-The aim of this is to saving the annoyance of commenting a pipe ``%>%``.
+The aim of this is saving the annoyance of commenting a pipe ``%>%``.
 
 ## Installation
 
