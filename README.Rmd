@@ -16,6 +16,9 @@ knitr::opts_chunk$set(
 # donothing
 
 <!-- badges: start -->
+![](https://img.shields.io/badge/does-nothing-blue.svg)
+![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)
+![](https://img.shields.io/badge/last change-`r Sys.setlocale('LC_TIME','English'); format(Sys.time(), '%B %d, %Y')`-yellowgreen.svg)
 <!-- badges: end -->
 
 The aim of this is to saving the annoyance of commenting a pipe ``%>%``.

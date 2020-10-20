@@ -5,6 +5,9 @@
 
 <!-- badges: start -->
 
+![](https://img.shields.io/badge/does-nothing-blue.svg) ![License:
+MIT](https://img.shields.io/badge/license-MIT-green.svg)
+![](https://img.shields.io/badge/last%20change-October%2020,%202020-yellowgreen.svg)
 <!-- badges: end -->
 
 The aim of this is to saving the annoyance of commenting a pipe `%>%`.
