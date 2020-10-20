@@ -27,7 +27,7 @@ The aim of this is saving the annoyance of commenting a pipe ``%>%``.
 
 You can install the development version from [GitHub](https://github.com/alejandroxag) with:
 
-``` {r warnings=FALSE,message=FALSE}
+``` {r warnings=FALSE, message=FALSE, echo=TRUE, results='hide'}
 # install.packages("devtools")
 devtools::install_github("alejandroxag/donothing")
 library(donothing)
