@@ -16,25 +16,42 @@ You can install the development version from
 
 ``` r
 # install.packages("devtools")
-library(donothing)
 devtools::install_github("alejandroxag/donothing")
+library(donothing)
 ```
 
 ## Example
 
 When working with a series of instructions piped down together, it’s
-really easy to comment any of them except the last, since the previous
-pipe is left pointing nowhere. `donothing()` is intended to be that last
-line that won’t be commented.
+straightforward to comment any of them, except the last one, since the
+previous pipe is left pointing nowhere. `donothing()` is intended to be
+that last line that won’t be commented.
+
+Easier to do this
 
 ``` r
-tibble::tibble(x = 1:7) %>% 
-    dplyr::mutate(y = letters[1:7]) %>% 
-    # dplyr::mutate(y = LETTERS[1:7]) %>% 
+t <- tibble::tibble(x = 1:2) %>% 
+    dplyr::mutate(y = letters[1:2]) %>%
+    # dplyr::mutate(y = LETTERS[1:7]) %>%
     donothing::donothing()
+t
+#> # A tibble: 2 x 2
+#>       x y    
+#>   <int> <chr>
+#> 1     1 a    
+#> 2     2 b
+```
 
-tibble::tibble(x = 1:7) %>% 
-    dplyr::mutate(y = letters[1:7]) %>% 
-    # dplyr::mutate(y = LETTERS[1:7]) %>% 
-    donothing::donothing()
+rather than this
+
+``` r
+t <- tibble::tibble(x = 1:2) %>% 
+    dplyr::mutate(y = letters[1:2]) #%>% 
+    # dplyr::mutate(y = letters[1:7])
+t
+#> # A tibble: 2 x 2
+#>       x y    
+#>   <int> <chr>
+#> 1     1 a    
+#> 2     2 b
 ```

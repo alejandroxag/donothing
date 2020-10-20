@@ -24,28 +24,32 @@ The aim of this is to saving the annoyance of commenting a pipe ``%>%``.
 
 You can install the development version from [GitHub](https://github.com/alejandroxag) with:
 
-``` {r eval=FALSE}
+``` {r warnings=FALSE,message=FALSE}
 # install.packages("devtools")
-library(donothing)
 devtools::install_github("alejandroxag/donothing")
+library(donothing)
 ```
 
 ## Example
 
-When working with a series of instructions piped down together, it's really 
-easy to comment any of them except the last, since the previous pipe is left
-pointing nowhere. ``donothing()`` is intended to be that last line that won't be
-commented.
+When working with a series of instructions piped down together, it's straightforward to comment any of them, except the last one, since the previous pipe is left pointing nowhere. ``donothing()`` is intended to be that last line that won't be commented.
 
-```{r eval=FALSE}
-tibble::tibble(x = 1:7) %>% 
-    dplyr::mutate(y = letters[1:7]) %>% 
-    # dplyr::mutate(y = LETTERS[1:7]) %>% 
-    donothing::donothing()
+Easier to do this
 
-tibble::tibble(x = 1:7) %>% 
-    dplyr::mutate(y = letters[1:7]) %>% 
-    # dplyr::mutate(y = LETTERS[1:7]) %>% 
+```{r}
+t <- tibble::tibble(x = 1:2) %>% 
+    dplyr::mutate(y = letters[1:2]) %>%
+    # dplyr::mutate(y = LETTERS[1:7]) %>%
     donothing::donothing()
+t
+```
+
+rather than this
+
+```{r}
+t <- tibble::tibble(x = 1:2) %>% 
+    dplyr::mutate(y = letters[1:2]) #%>% 
+    # dplyr::mutate(y = letters[1:7])
+t
 ```
 
