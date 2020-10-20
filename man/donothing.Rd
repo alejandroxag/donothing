@@ -10,13 +10,12 @@ donothing(arg)
 \item{arg}{Anything.}
 }
 \value{
-arg.
+arg
 }
 \description{
 That's that.
 }
 \examples{
-
 tibble::tibble(x = 1:3) \%>\%
 dplyr::mutate(y = letters[1:3]) \%>\%
 # dplyr::mutate(y = LETTERS[1:3]) \%>\%

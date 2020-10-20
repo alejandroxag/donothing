@@ -6,12 +6,11 @@
 #' Anything.
 #'
 #' @return
-#' arg.
+#' arg
 #'
 #' @export
 #'
 #' @examples
-#'
 #' tibble::tibble(x = 1:3) %>%
 #' dplyr::mutate(y = letters[1:3]) %>%
 #' # dplyr::mutate(y = LETTERS[1:3]) %>%
